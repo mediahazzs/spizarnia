@@ -157,7 +157,7 @@ card.classList.remove('swiped');
 }
  
 }
-                          function exportShoppingPDF(){
+function exportShoppingPDF(){
  alert("funkcja działa");
 }
 });
