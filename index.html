@@ -10,16 +10,33 @@
 </head>
 <body>
 
-<h1>🥫 Spiżarnia</h1>
+<div class="app-shell">
+
+<header class="top-card">
+<h1>Spiżarnia</h1>
+<p>Stan domowych zapasów</p>
+</header>
 
 <section class="add-box">
 <input id="productName" placeholder="Produkt">
 <input id="productAmount" type="number" value="1">
 <input id="productUnit" placeholder="np. szt, kg">
-<button onclick="addProduct()">Dodaj</button>
+<button onclick="addProduct()">+ Dodaj składnik</button>
 </section>
 
+<h2>Produkty</h2>
 <section id="productList"></section>
+
+<h2>Lista zakupów</h2>
+<div id="shoppingList"></div>
+
+<nav class="tabbar">
+<button>🥫<span>Spiżarnia</span></button>
+<button>🛒<span>Zakupy</span></button>
+<button>⚙️<span>Ustawienia</span></button>
+</nav>
+
+</div>
 <h2>🛒 Lista zakupów</h2>
 <div id="shoppingList"></div>
 <button onclick="exportShoppingPDF()">Eksport</button>
