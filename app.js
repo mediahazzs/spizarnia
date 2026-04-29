@@ -60,7 +60,7 @@ y+=10;
 doc.output('dataurlnewwindow');
  }
 
-
+}
 
 function addProduct(){
 const name=document.getElementById('productName').value;
