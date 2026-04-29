@@ -35,6 +35,30 @@ row.innerHTML=`
 list.appendChild(row);
 });
 }
+  function exportShoppingPDF(){
+const { jsPDF } = window.jspdf;
+const doc = new jsPDF();
+
+const lowStock = products.filter(p=>p.amount<=2);
+
+let y=20;
+doc.setFontSize(18);
+doc.text('Lista zakupów - Spiżarnia',20,y);
+
+y+=20;
+doc.setFontSize(12);
+
+if(lowStock.length===0){
+ doc.text('Brak produktów do kupienia.',20,y);
+}else{
+ lowStock.forEach(item=>{
+   doc.text(`- ${item.name}`,20,y);
+   y+=10;
+ });
+}
+
+doc.output('dataurlnewwindow');
+}
 
 function addProduct(){
 const name=document.getElementById('productName').value;
@@ -131,28 +155,5 @@ card.classList.add('swiped');
 if(diff<-40){
 card.classList.remove('swiped');
 }
-  function exportShoppingPDF(){
-const { jsPDF } = window.jspdf;
-const doc = new jsPDF();
 
-const lowStock = products.filter(p=>p.amount<=2);
-
-let y=20;
-doc.setFontSize(18);
-doc.text('Lista zakupów - Spiżarnia',20,y);
-
-y+=20;
-doc.setFontSize(12);
-
-if(lowStock.length===0){
- doc.text('Brak produktów do kupienia.',20,y);
-}else{
- lowStock.forEach(item=>{
-   doc.text(`- ${item.name}`,20,y);
-   y+=10;
- });
-}
-
-doc.output('dataurlnewwindow');
-}
 });
