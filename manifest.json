@@ -1,7 +1,7 @@
 {
 "name":"Spiżarnia",
 "short_name":"Spiżarnia",
-"start_url":"/",
+"start_url":"spizarnia",
 "display":"standalone",
 "background_color":"#f7f5ef",
 "theme_color":"#f7f5ef",
