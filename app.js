@@ -55,11 +55,9 @@ lowStock.forEach(item=>{
 doc.text("- " + item.name,20,y);
 y+=10;
 });
-}
+    }
 
-doc.output('dataurlnewwindow');
- 
-
+    doc.output('dataurlnewwindow');
 }
 
 function addProduct(){
