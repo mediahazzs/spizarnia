@@ -1,0 +1,92 @@
+body{
+font-family:Arial,sans-serif;
+padding:20px;
+max-width:500px;
+margin:auto;
+background:#f7f5ef;
+}
+
+h1{
+text-align:center;
+}
+
+.add-box{
+display:flex;
+flex-direction:column;
+gap:10px;
+margin-bottom:30px;
+}
+
+input,button{
+padding:14px;
+font-size:18px;
+border-radius:12px;
+}
+
+button{
+cursor:pointer;
+}
+
+.item{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:white;
+padding:15px;
+margin-bottom:12px;
+border-radius:14px;
+}
+
+.controls{
+display:flex;
+gap:10px;
+}
+
+.controls button{
+width:42px;
+height:42px;
+}
+.controls{
+ display:flex;
+ gap:8px;
+}
+.item{
+overflow:hidden;
+padding:0;
+}
+
+.swipe-wrap{
+display: flex; /* Układa delete-bg i swipe-item w poziomie */
+  flex-direction: row-reverse; /* Przerzuca delete-bg na koniec (prawą stronę) */
+  align-items: stretch;
+  background: #f0f0f0; /* Tło pod spodem, jeśli karta się przesunie */
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.delete-bg{
+display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff4444;
+  color: white;
+  width: 80px; /* Szerokość przycisku usuwania */
+  cursor: pointer;
+  order: 2; /* Gwarantuje, że będzie po prawej stronie */
+}
+
+.swipe-item{
+ display: flex;
+  justify-content: space-between; /* Nazwa produktu po lewej, przyciski +/- po prawej */
+  align-items: center;
+  flex-grow: 1; /* Karta zajmuje całą dostępną szerokość */
+  background: white;
+  padding: 10px 15px;
+  z-index: 2;
+}
+
+
+.swiped{
+transform:translateX(-90px);
+}
