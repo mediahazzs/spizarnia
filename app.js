@@ -156,8 +156,8 @@ if(diff<-40){
 card.classList.remove('swiped');
 }
  
-}
+});
 function exportShoppingPDF(){
  alert("funkcja działa");
 }
-});
+
