@@ -37,27 +37,28 @@ row.innerHTML=`
 list.appendChild(row);
 });
 }
-  function exportShoppingPDF(){
-    
+ function exportShoppingPDF(){
+
 const { jsPDF } = window.jspdf;
 const doc = new jsPDF();
 
-const lowStock = products.filter(p=>p.amount<=2);
+doc.text("Lista zakupów",20,20);
 
-let y=20;
-doc.setFontSize(18);
-doc.text('Lista zakupów - Spiżarnia',20,y);
+let lowStock=products.filter(p=>p.amount<=2);
 
-y+=20;
-doc.setFontSize(12);
+let y=40;
 
 if(lowStock.length===0){
- doc.text('Brak produktów do kupienia.',20,y);
+doc.text("Brak produktów do kupienia.",20,y);
 }else{
- lowStock.forEach(item=>{
-   doc.text(`- ${item.name}`,20,y);
-   y+=10;
- });
+lowStock.forEach(item=>{
+doc.text("- " + item.name,20,y);
+y+=10;
+});
+}
+
+doc.output('dataurlnewwindow');
+
 }
 
 doc.output('dataurlnewwindow');
