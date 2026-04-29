@@ -62,7 +62,7 @@ doc.output('dataurlnewwindow');
 }
 
 doc.output('dataurlnewwindow');
-}
+
 
 function addProduct(){
 const name=document.getElementById('productName').value;
