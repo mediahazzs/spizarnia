@@ -36,6 +36,7 @@ list.appendChild(row);
 });
 }
   function exportShoppingPDF(){
+    
 const { jsPDF } = window.jspdf;
 const doc = new jsPDF();
 
