@@ -1,5 +1,5 @@
 let products = JSON.parse(localStorage.getItem('spizarnia')) || [];
-}
+
 function save(){
 localStorage.setItem('spizarnia', JSON.stringify(products));
 }
