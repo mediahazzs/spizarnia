@@ -58,6 +58,7 @@ y+=10;
 }
 
 doc.output('dataurlnewwindow');
+ }
 
 
 
