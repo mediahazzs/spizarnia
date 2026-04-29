@@ -1,5 +1,7 @@
 let products = JSON.parse(localStorage.getItem('spizarnia')) || [];
-
+function exportShoppingPDF(){
+ alert("działa");
+}
 function save(){
 localStorage.setItem('spizarnia', JSON.stringify(products));
 }
