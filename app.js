@@ -37,7 +37,7 @@ row.innerHTML=`
 list.appendChild(row);
 });
 }
- function exportShoppingPDF(){
+ function generateShoppingPDF(){
 
 const { jsPDF } = window.jspdf;
 const doc = new jsPDF();
