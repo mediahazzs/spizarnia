@@ -22,7 +22,7 @@
 <section id="productList"></section>
 <h2>🛒 Lista zakupów</h2>
 <div id="shoppingList"></div>
-  <button onclick="exportShoppingPDF()">
+<button onclick="exportShoppingPDF()">
 Eksportuj listę zakupów PDF
 </button>
 
@@ -32,5 +32,6 @@ if('serviceWorker' in navigator){
 navigator.serviceWorker.register('sw.js');
 }
 </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </body>
 </html>
