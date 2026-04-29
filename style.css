@@ -90,3 +90,46 @@ display: flex;
 .swiped{
 transform:translateX(-90px);
 }
+.top-card{
+background:linear-gradient(135deg,#ffffff,#ececec);
+padding:26px;
+border-radius:30px;
+margin-bottom:20px;
+box-shadow:0 8px 30px rgba(0,0,0,.08);
+}
+
+.top-card p{
+opacity:.6;
+margin-top:6px;
+}
+
+.tabbar{
+position:fixed;
+bottom:18px;
+left:50%;
+transform:translateX(-50%);
+width:min(92%,500px);
+background:white;
+border-radius:30px;
+padding:12px;
+display:flex;
+justify-content:space-around;
+box-shadow:0 8px 35px rgba(0,0,0,.12);
+}
+
+.tabbar button{
+background:none;
+color:black;
+display:flex;
+flex-direction:column;
+font-size:22px;
+gap:4px;
+}
+
+.tabbar span{
+font-size:12px;
+}
+
+body{
+padding-bottom:110px;
+}
