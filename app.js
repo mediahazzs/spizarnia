@@ -157,7 +157,5 @@ card.classList.remove('swiped');
 }
  
 });
-function exportShoppingPDF(){
- alert("funkcja działa");
 
 
