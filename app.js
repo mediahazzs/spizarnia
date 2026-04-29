@@ -153,6 +153,6 @@ if(lowStock.length===0){
  });
 }
 
-doc.save('lista-zakupow.pdf');
+doc.output('dataurlnewwindow');
 }
 });
